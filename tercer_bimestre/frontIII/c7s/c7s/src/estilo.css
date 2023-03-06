@@ -1,0 +1,12 @@
+#item { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+    font-size: large;
+    margin: 1rem;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;4
+}
