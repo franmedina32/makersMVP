@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Favs from './components/Favs'
 import Signup from './components/Signup'
 import Login from './components/Login'
-import NavbarComp from './components/NavbarComp'
 import Home from './components/Home'
 import Footer from './components/Footer'
 

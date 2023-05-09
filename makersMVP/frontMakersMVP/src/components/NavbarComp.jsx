@@ -1,18 +1,19 @@
 import React from 'react'
 import { Navbar, Container,Nav } from 'react-bootstrap'
 import { Link, Outlet } from 'react-router-dom'
+import { GrTechnology } from 'react-icons/gr'
+import '../styles/navbarStyle.css'
 const NavbarComp = () => {
   return (
     <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar>
             <Container fluid>
-                <Navbar.Brand>EASY SEA</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <h1 className='title'>BLOCKSAVVY<GrTechnology/></h1>
                 <Navbar.Collapse id="navbarScroll">
-                    <Nav>
-                        <Nav.Item as={Link} to='/'>User</Nav.Item>
-                        <Nav.Item as={Link} to='/home'>Home</Nav.Item>
-                        <Nav.Link as={Link} to='/favs'>Favs</Nav.Link>
+                    <Nav className='navbar'>
+                        <Nav.Item className='navitem' as={Link} to='/'>User</Nav.Item>
+                        <Nav.Item className='navitem' as={Link} to='/home'>Home</Nav.Item>
+                        <Nav.Link className='navitem' as={Link} to='/favs'>Favs</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Login from './Login'
 import { endpoints } from '../resources/endpoints'
+import '../styles/styles.css'
 
 const Signup = () => {
     const [userData, setUserData] = useState()
@@ -24,9 +25,9 @@ const Signup = () => {
     <div>
         {validUser ? <Login/> :
         <div>
-            <h2>SIGN UP TO BLOCKSAVVY</h2>
-            <div>
-                <form action="submit" onSubmit={handleSignup}>
+            <h2 className='title'>SIGN UP TO BLOCKSAVVY</h2>
+            <div className='loginForm'>
+                <form  action="submit" onSubmit={handleSignup}>
                     <div>
                         <label>email</label>
                         <input type='email' placeholder='log in with your email' onChange={(e)=> {setUserData({...userData, userEmail: e.target.value})}}/>
